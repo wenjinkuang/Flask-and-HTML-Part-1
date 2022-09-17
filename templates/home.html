@@ -3,7 +3,7 @@
     <head>
         <title> Home Page</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='mystyle.css') }}">
     </head>
 
     <body>
@@ -45,8 +45,8 @@
                     <span style="vertical-align:middle;">
                         <p2>
                             To learn more please press the <i><b>"TOTALLY SAFE BUTTON"</b></i>
-                            <button onclick="location.href='about.html'" type="button">
-                            Learn more here</button> 
+                            <button type="button"><a href="{{ url_for('about') }}">
+                            Learn more here</a></button> 
                         </p2>
                     </span>
                 </div>

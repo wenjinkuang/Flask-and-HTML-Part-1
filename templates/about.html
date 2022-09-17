@@ -3,7 +3,7 @@
     <head>
         <title>About page</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="mystyle2.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='mystyle2.css') }}">
     </head>
     
     <body>
@@ -18,8 +18,8 @@
         <br>
         <div class="center">
             
-                <button onclick="location.href='flask.html'" type="button" style="text-align: center;">
-                    This button does nothing press if don't believe</button>
+            <button type="button" style="text-align: center;"><a href="{{ url_for('home') }}">
+                    This button does nothing press if don't believe</a></button>
             
         </div>
     </body>
